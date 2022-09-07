@@ -28,6 +28,10 @@ a {
     color: white;
 }
 
+i:hover {
+    cursor: pointer;
+}
+
 ul {
     list-style-type: none;
 }
