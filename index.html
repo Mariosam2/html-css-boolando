@@ -1,18 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    <header id="site_header"></header>
+    <header id="site_header">
+        <div class="container">
+            <nav class="d-flex space-between">
+                <div class="menu">
+                    <ul class="d-flex">
+                        <li><a href="">Donna</a></li>
+                        <li><a href="">Uomo</a></li>
+                        <li><a href="">Bambino</a></li>
+                    </ul>
+                </div>
+                <div class="logo d-flex justify-center align-center">
+                    <img src="./assets/img/boolean-logo.png" alt="">
+                </div>
+                <div class="profile d-flex justify-center align-center">
+                    <i class="fa-regular fa-user"></i>
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
     <!--/header-->
-    <main id="site_main"></main>
+    <main id="site_main">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="product">
+                        <img src="./assets/img/1.webp" alt="">
+                        <span class="heart"><i class="fa-solid fa-heart"></i></span>
+                        <p class="discount">
+                            <span class="badge red">-50%</span>
+                            <span class="badge green">Sostenibilità</span>
+                        </p>
+                    </div>
+                    <div class="content"></div>
+                </div>
+                <div class="col-4"></div>
+                <div class="col-4"></div>
+            </div>
+        </div>
+        
+    </main>
     <!--/main-->
     <footer id="site_footer"></footer>
     <!--/footer-->
 </body>
+
 </html>

@@ -1,6 +1,130 @@
+:root {
+    --bg_header-color: #FF6900;
+    --bg_footer-color: #1A1A1A;
+}
+
+
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 
 }
+
+.container {
+    width: 80%;
+    max-width: 1260px;
+    margin: auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+}
+
+/* Utility */
+.d-flex {
+    display: flex;
+}
+.space-between {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+/* #region columns */
+.col-4 {
+    width: calc((100%/12)*4);
+}
+/* #endregion columns */
+
+/* #region main */
+
+/* #endregion main */
+.heart {
+    font-size: 1.2rem;
+    position: absolute;
+    right: 0;
+    top: 1%;
+    background-color: white;
+}
+
+.heart i {
+    padding: 0.8rem;
+}
+
+.badge {
+    padding: 0.5rem 0.8rem;
+}
+
+.product {
+    position: relative;
+}
+
+.discount {
+    position: absolute;
+    left: 0;
+    bottom: 10%;
+}
+
+.red {
+    background-color: red;
+
+
+}
+
+.green {
+    background-color: green;
+}
+
+
+
+/* #region header */
+
+header {
+    background-color: var(--bg_header-color);
+    box-shadow:0 2px 3px #aaaaaa;
+}
+
+.logo img{
+    max-width: 20%;
+    padding: 0.5rem 0;
+}
+
+.menu ul {
+    list-style-type: none;
+}
+
+.menu ul li {
+    padding: 1rem;
+}
+
+.menu ul li a {
+    color: white;
+}
+
+.menu ul li:hover a {
+    text-decoration: underline;
+}
+
+.profile i {
+    padding: 0.5rem;
+}
+
+/* #endregion header */
