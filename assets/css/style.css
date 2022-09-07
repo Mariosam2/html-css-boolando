@@ -95,12 +95,13 @@ header {
     background-color: var(--bg_header-color);
     box-shadow:0 2px 3px #aaaaaa;
     position: fixed;
-    width: 100vw;
+    width: 100%;
     z-index: 2;
     
 
 
 }
+
 
 .logo img{
     max-width: 20%;
@@ -117,8 +118,21 @@ header {
 }
 
 .profile i {
-    padding: 0.5rem;
+    padding: 0.5rem 0;
+    padding-left: 1rem;
     color: white;
+}
+
+.menu, .profile {
+    flex-basis: 40%;
+}
+
+.menu {
+    justify-content: flex-start;
+}
+
+.profile {
+    justify-content: flex-end;
 }
 
 
