@@ -42,7 +42,6 @@ ul {
 
 .row {
     display: flex;
-    flex-wrap: wrap;
     margin: 1rem 0;
 
 }
@@ -68,7 +67,20 @@ ul {
 /* #region columns */
 .col-4 {
     width: calc((100%/12)*4);
+    
+}
+
+.col-4:first-child{
     padding-right: 1rem;
+
+}
+
+.col-4:nth-child(2){
+    padding: 0 0.5rem;
+}
+
+.col-4:nth-child(3) {
+    padding-left: 1rem;
 }
 /* #endregion columns */
 
