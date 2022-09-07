@@ -26,11 +26,17 @@ a {
     text-decoration: none;
 }
 
+.fill {
+    padding: 3rem;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin: 1rem 0;
+
 }
+
+
 
 /* Utility */
 .d-flex {
@@ -63,6 +69,10 @@ a {
 header {
     background-color: var(--bg_header-color);
     box-shadow:0 2px 3px #aaaaaa;
+    position: fixed;
+    width: 100vw;
+    z-index: 2;
+    
 
 
 }
@@ -105,6 +115,7 @@ header {
     right: 0;
     top: 1%;
     background-color: white;
+    z-index: 2;
 }
 
 .heart i {
@@ -113,24 +124,28 @@ header {
 
 .badge {
     padding: 0.5rem 0.8rem;
-    z-index: 2;
+    
 }
 
 .product {
     position: relative;
 }
 
-.product img {
-    position: relative;
-    z-index: 0;
-    
+
+.hover_img {
+    display: none;
 }
 
-.product:hover {
-    background-image:  url('../img/1b.webp');
-    z-index: 2;
+.product:hover .normal_img {
+    display:none
 }
-    
+
+.product:hover .hover_img{
+    display: inline-block;
+}
+
+
+
 
 
 .discount {
