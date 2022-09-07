@@ -54,44 +54,7 @@ a {
 }
 /* #endregion columns */
 
-/* #region main */
 
-/* #endregion main */
-.heart {
-    font-size: 1.2rem;
-    position: absolute;
-    right: 0;
-    top: 1%;
-    background-color: white;
-}
-
-.heart i {
-    padding: 0.8rem;
-}
-
-.badge {
-    padding: 0.5rem 0.8rem;
-}
-
-.product {
-    position: relative;
-}
-
-.discount {
-    position: absolute;
-    left: 0;
-    bottom: 10%;
-}
-
-.red {
-    background-color: red;
-
-
-}
-
-.green {
-    background-color: green;
-}
 
 
 
@@ -100,6 +63,8 @@ a {
 header {
     background-color: var(--bg_header-color);
     box-shadow:0 2px 3px #aaaaaa;
+
+
 }
 
 .logo img{
@@ -127,4 +92,75 @@ header {
     padding: 0.5rem;
 }
 
+
+
 /* #endregion header */
+
+
+
+/* #region main */
+.heart {
+    font-size: 1.2rem;
+    position: absolute;
+    right: 0;
+    top: 1%;
+    background-color: white;
+}
+
+.heart i {
+    padding: 0.8rem;
+}
+
+.badge {
+    padding: 0.5rem 0.8rem;
+    z-index: 2;
+}
+
+.product {
+    position: relative;
+}
+
+.product img {
+    position: relative;
+    z-index: 0;
+    
+}
+
+.product:hover {
+    background-image:  url('../img/1b.webp');
+    z-index: 2;
+}
+    
+
+
+.discount {
+    position: absolute;
+    left: 0;
+    bottom: 10%;
+    color: white;
+}
+
+.red {
+    background-color: red;
+
+
+}
+
+.green {
+    background-color: green;
+}
+
+.caption {
+    font-style: italic;
+}
+
+.text-red {
+    color: red;
+    font-weight: bolder;
+}
+
+.text-del {
+    text-decoration: line-through;
+}
+
+/* #endregion main */
